@@ -23,18 +23,18 @@ public class Select {
 
 		String HQL = " from Student where id = 3";//from Employee where id =2
 	
-		Student s= (Student)
-		session.get(Student.class, new Integer(1));
+		//Student s= (Student)
+		//session.get(Student.class, new Integer(1));
 //		System.out.println(s.getName("Pagal"));
-//		Query query = session.createQuery(HQL);
-//
-//	
-//
-//		Student singleResult =(Student) query.getSingleResult();
-//
-//		System.out.println(singleResult);
-//
-//		
+		Query query = session.createQuery(HQL);
+
+	
+
+		Student singleResult =(Student) query.getSingleResult();
+
+		System.out.println(singleResult);
+
+		
 
 	}
 
